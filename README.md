@@ -1,4 +1,4 @@
-# durban-budget-project-flask
+# Responsive Cities Challenge
 
 This is a version of the Responsive Cities Challenge site built using Flask and Bootstrap. To deploy:
   - Clone
