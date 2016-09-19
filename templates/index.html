@@ -260,7 +260,7 @@
         </div>
         <div class="row">
             <div class="col-lg-4 text-" style="text-align: left">
-                <p>To participate in the Responsive Cities Challenge complete the form below before 12pm on 7 October
+                <p>To participate in the Responsive Cities Challenge complete the form below before 12pm on 21 October
                     2016. All proposals submitted by this time will be considered. We will then notify individuals and
                     teams whether their idea has been selected to come along to the co-creation workshops later in
                     October.</p>
@@ -292,12 +292,22 @@
                     <p>Project Overview</p>
                     <label for="title">Project Title / Name:</label>
                     <input type="text" class="form-control" id="title" required name="title">
+                    <label for="impact">What city are you submitting for?</label>
+                    <select class="form-control" id="impact" name="impact">
+                        <option>Choose city...</option>
+                        <option>Ekurhuleni</option>
+                        <option>Tshwane</option>
+                        <option>Ethekwini</option>
+                        <option>Sol Plaatje & Dawid Kruiper</option>
+                        <option>Cape Town</option>
+                    </select>
                     <label for="desc">Describe Your Project Briefly:</label>
                     <textarea rows="6" class="form-control" id="desc" required name="desc"></textarea>
-                    <label for="prob">What is the main problem or opportunity you are addressing in the city?</label>
+                    <label for="prob">What is the main problem or opportunity you are addressing in the city? (MAX 200 words)</label>
                     <textarea rows="6" class="form-control" id="prob" required name="prob"></textarea>
                     <label for="impact">What area of the city or resident life are you impacting?</label>
                     <select class="form-control" id="impact" name="impact">
+                        <option>Choose area...</option>
                         <option>Transport</option>
                         <option>Water or energy</option>
                         <option>Social work and disabilities</option>
@@ -307,9 +317,11 @@
                         <option>Housing and settlements</option>
                         <option>Food and agriculture</option>
                         <option>Business, industry and economic development</option>
+                        <option>Other</option>
                     </select>
                     <label for="stage">Which option best describes your stage of development?</label>
                     <select class="form-control" id="stage" required name="stage">
+                        <option>Choose stage...</option>
                         <option>Concept / idea</option>
                         <option>Researching / investigating feasibility</option>
                         <option>Prototype</option>
@@ -322,18 +334,12 @@
                 </div>
 
                 <div class="form-group">
-                    <br>
-                    <p>Impact</p>
                     <label for="users">Who do you think will be the main users of your product or service?</label>
                     <textarea rows="6" class="form-control" id="users" required name="users"></textarea>
-                    <label for="eimpact">What is the anticipated social or economic impact from your product or
-                        service?</label>
-                    <textarea rows="6" class="form-control" id="eimpact" required name="eimpact"></textarea>
                 </div>
 
                 <div class="form-group">
                     <br>
-                    <p>Implementation and sustainability</p>
                     <p style="font-size: 15px"><b>What data or other resources do you need to get this project
                         implemented?</b></p>
 
@@ -351,10 +357,10 @@
                             <input type="checkbox" name="ba-needed"> Business Advice
                         </label>
                         <label class="btn btn-primary">
-                            <input type="checkbox" name="cut-needed"> Access to Cusomters
+                            <input type="checkbox" name="market-needed"> Marketing
                         </label>
                         <label class="btn btn-primary">
-                            <input type="checkbox" name="int-pr-needed"> Intellectual property protection
+                            <input type="checkbox" name="tech-needed"> Technical Assistance
                         </label>
                     </div>
                     <br>
@@ -368,12 +374,12 @@
                     <textarea rows="6" class="form-control" id="edu" required name="edu"></textarea>
                 </div>
                 <input hidden type="text" id="upload" name="upload">
-                <label class="btn btn-primary" for="my-file-selector">
-                    <input id="my-file-selector" type="file" style="display:none;"
-                           onchange="$('#upload-file-info').html($(this).val());document.getElementById('upload').value=$(this).val();">
-                    Upload a file or zipped folder
-                </label>
-                <span class='label label-info' id="upload-file-info"></span>
+                <!--<label class="btn btn-primary" for="my-file-selector">-->
+                    <!--<input id="my-file-selector" type="file" style="display:none;"-->
+                           <!--onchange="$('#upload-file-info').html($(this).val());document.getElementById('upload').value=$(this).val();">-->
+                    <!--Upload a file or zipped folder-->
+                <!--</label>-->
+                <!--<span class='label label-info' id="upload-file-info"></span>-->
                 <button type="submit" class="btn btn-default">Submit</button>
             </form>
         </div>
